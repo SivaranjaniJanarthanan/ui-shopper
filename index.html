@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopper Template</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/src/style.css">
+
+    <style>
+        header {
+       display: flex;
+       justify-content: space-between;
+   }
+   .brand-title {
+       font-size: 25px;
+       font-weight: bold;
+   }
+   .brand-menu {
+       font-size: 20px;
+   }
+   .brand-menu span {
+       margin-right: 20px;
+   }
+   .brand-icons {
+       font-size: 20px;
+   }
+   .brand-icons span {
+      margin-right: 20px;
+   }
+   .count {
+       background-color: orange;
+       color:black;
+       padding: 4px;
+       border-radius: 30px;
+       font-weight: bold;
+       position: absolute;
+       left: 1315px;
+       width: 15px;
+       height: 15px;
+       font-size: 10px;
+   }
+   .brand-offer {
+    background-color: black;
+    color:white;
+    padding: 5px;
+    text-align: center;
+   }
+   .brand-nav {
+    margin-top: 10px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+   }
+   .women {
+    background-image: url("./public/images/women.jpg");
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    opacity: 0.7;
+   }
+   .women:hover {
+       opacity: 1;
+   }
+   .men {
+       background-image: url("./public/images/men.jpg");
+       background-size: cover;
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       opacity: 0.7;
+   }
+   .men:hover {
+       opacity: 1;
+   }
+   .kids {
+       background-image: url("./public/images/kid.jpg");
+       background-size: cover;
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       opacity: 0.7;
+   }
+   .kids:hover {
+       opacity: 1;
+   }
+   .brand-time {
+       background-color: white;
+       color: black;
+       padding: 110px;
+       text-align: center;
+       justify-content: center;
+       margin-top: 80px;
+       background: url("./public/images/discover.webp");
+       background-repeat: no-repeat;
+       background-size: cover;
+       width: 100%;
+       height: 500px;
+   }
+   .brand-time p {
+       text-align: center;
+       font-size: 50px;
+       margin-top: 0px;
+       color: red;
+   }
+   .brand-time button {
+       width: 150px;
+       height: 45px;
+       background-color: black;
+       color: white;
+   }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="brand-top">
+        <div class="brand-header-title">
+        <span class="bi bi-truck"></span> Free Shipping Worldwide
+     </div>
+     <div class="brand-dropdown">
+        <label for="cars"><img src="./public/images/sidebag.jpg" width="25px" height="25px"></label>
+        <select name="cars" id="cars">
+          <option value="unitedstates">United States</option>
+          <option value="unitedstates">United States</option>
+          <option value="canada">Canada</option>
+          <option value="german">German</option>
+        </select>
+        <label for="cars"><img src="./public/images/sidebag.jpg" width="25px" height="25px"></label>
+           <select name="cars" id="cars">
+             <option value="usd">USD</option>
+             <option value="eur">EUR</option>
+           </select>
+        <label for="cars"><img src="./public/images/sidebag.jpg" width="25px" height="25px"></label>
+            <select name="cars" id="cars">
+              <option value="english">English</option>
+              <option value="french">French</option>
+              <option value="german">German</option>
+            </select>
+       </div>
+       <div class="brand-top-icons">
+        <span class="bi bi-facebook"></span>
+        <span class="bi bi-twitter"></span>
+        <span class="bi bi-instagram"></span>
+        <span class="bi bi-youtube"></span>
+       </div>
+    </div>
+    <header>
+        <div class="brand-title">
+            Shopper.
+        </div>
+        <div class="brand-menu">
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Blog</span>
+            <span>Pages</span>
+            <span>Docs</span>
+        </div>
+        <div class="brand-icons">
+            <span class="bi bi-search"></span>
+            <span class="bi bi-person"></span>
+            <span class="bi bi-heart"></span>
+            <span class="bi bi-cart"></span>
+            <span class="count">5</span>
+        </div>
+    </header>
+    <div class="brand-offer">
+       <span class="bi bi-lightning-fill text-warning"></span> HAPPY HOLIDAY DEALS ON EVERYTHING <span class="bi bi-lightning-fill text-warning"></span>
+    </div>
+    <div class="brand-nav">
+        <div class="women">
+           
+                <div class="banner-title">
+                    Women
+                </div>
+                <div>
+                    <button>Shop Women <span class="bi bi-arrow-right"></span> </button>
+                </div>
+           
+        </div>
+        <div class="men">
+            <div class="banner-title">
+                Men
+            </div>
+            <div>
+                <button>Shop Men <span class="bi bi-arrow-right"></span> </button>
+            </div>
+        </div>
+        <div class="kids">
+            <div class="banner-title">
+                Kids
+            </div>
+            <div>
+                <button>Shop Kids <span class="bi bi-arrow-right"></span> </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="brand-bar">
+        <div>
+        <h6><span class="bi bi-truck"></span>FREE SHIPPING</h6>
+        <p>From all orders over $100</p>
+      </div>
+      <div>
+        <h6><span class="bi bi-arrow-repeat"></span>FREE RETURNS</h6>
+        <p>Return money within 30 days</p>
+      </div>
+      <div>
+        <h6><span class="bi bi-lock"></span>SECURE SHOPPING</h6>
+        <p>You're in safe hands</p>
+      </div>
+      <div>
+        <h6><span class="bi bi-tag"></span>OVER 10,000 STYLES</h6>
+        <p>We have everything you need</p>
+      </div>
+    </div>
+    <div class="brand-line">
+        <div class="centerline"></div>
+    </div>
+
+    <div class="brand-collection">
+        <p>NEW COLLECTION</p>
+        <h1>Best Picks 2019</h1>
+        <p>Appear, dry there darkness they're seas, dry waters thing fly midst. Beast, above fly brought Very green.</p>
+    </div>
+        <div class="card-discount">
+            <div class="row">
+                <div>
+                    <img src="./public/images/sidebag.jpg" width="400px" height="450px">
+                </div>
+                <div>
+                    <img src="./public/images/mencollection.webp" width=700px" height="450px">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="./public/images/womencollection.jpg" width="700px" height="450px">
+                </div>
+                <div>
+                    <img src="./public/images/sweatshirt.jpg" width="400px" height="450px">
+                </div>
+        </div>
+        </div>
+        <div class="brand-collection">
+                <h1>Top month Sellers</h1>
+                <div class="brand-sellermenu">
+                    <span class="active">Women</span>
+                    <span>Men</span>
+                    <span>Kids</span>
+                </div>
+        </div>
+        <div class="card-images">
+            <div class="row">
+                <div>
+                    <img src="./public/images/mid heels.jpeg" width="250px" height="300px">
+                </div>
+                <div>
+                    <img src="./public/images/dress.webp" width="250px" height="300px">
+                </div>
+                <div>
+                    <img src="./public/images/sneakers.jpg" width="250px" height="300px">
+                </div>
+                <div>
+                    <img src="./public/images/croptop.jpg" width="250px" height="300px">
+                </div>
+            </div>
+            <div class="row">
+                <div>
+                    <img src="./public/images/middi.webp" width="250px" height="300px">
+                </div>
+                <div>
+                    <img src="./public/images/bodybag.jpg" width="250px" height="300px">
+                </div>
+                <div>
+                    <img src="./public/images/alinekurti.webp" width="250px" height="300px">
+                </div>
+                <div>
+                    <img src="./public/images/heels.jpg" width="250px" height="300px">
+                </div>
+        </div>
+</div>
+        <div class="brand-discover" style="margin-left:100px;">
+            Discover more
+        </div>
+<div class="brand-time">
+            <h1>Get -50% from Summer Collection</h1>
+            <p id="demo"></p>
+            <button>Shop Now <span class="bi bi-arrow-right"></span> </button>
+</div>
+<div class="brand-buyers">
+    <p>WHAT BUYERS SAY</p>
+    <h1>Latest buyers Reviews</h1>
+</div> 
+<div class="brand-cardborder">
+<div class="brand-card">
+        <div class="brand-review">
+            <div><img src="./public/images/mid heels.jpeg">
+                <p>Shoe</p>
+            
+            <p>Low top Sneakers</p>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i style="color:orange" class="fa">&#xf123;</i>
+            </div>
+        </br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+        </div>     
+       
+        <div class="brand-review">
+            <div><img src="./public/images/sweatshirt.jpg">
+                <p>sweatshirt</p>
+            
+            <p>Low top Sweatshirt</p>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i style="color:orange" class="fa">&#xf123;</i>
+            </div>
+        </br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+        </div>     
+
+    <div class="brand-review">
+            <div><img src="./public/images/dress.webp">
+                <p>Frock</p>
+            
+            <p>Low top Frock</p>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i class="fa fa-star" style="color:orange"></i>
+            <i style="color:orange" class="fa">&#xf123;</i>
+            </div>
+        </br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+        </div>     
+        </div>
+        </div>
+        
+<div class="carousel">
+    <div class="carousel__item"></div>
+    <div class="carousel__item"></div>
+    <div class="carousel__item"></div>
+    <div class="carousel__item"></div>
+  </div>
+  <div class="brand-shopper">
+    <h1>@shopper</h1>
+    <p>Appear, dry there darkness they're seas, dry waters.</p> 
+</div>
+<div class="card-fourimages">
+<div class="row">
+    <div>
+        <img src="./public/images/mid heels.jpeg" width="250px" height="300px">
+    </div>
+    <div>
+        <img src="./public/images/dress.webp" width="250px" height="300px">
+    </div>
+    <div>
+        <img src="./public/images/sneakers.jpg" width="250px" height="300px">
+    </div>
+    <div>
+        <img src="./public/images/croptop.jpg" width="250px" height="300px">
+    </div>
+</div>
+</div>
+
+
+<div class="brand-footerhead">
+    <span>Want style Ideas and Treats? </span>
+    <div>
+        <input type="text" id="fname" name="fname" placeholder="Enter Email*">
+        <button class="subscribe">Subscribe</button>
+    </div>
+ </div>
+<footer>
+            <div class="footer-border">
+                <span class="brand-footer">Shopper.</span>
+                <div class="social-bar">
+                    <aside>
+                        <span class="bi bi-facebook"></span>
+                        <span class="bi bi-twitter"></span>
+                        <span class="bi bi-instagram"></span>
+                        <span class="bi bi-youtube"></span>
+                    </aside>
+                </div>
+            </div>
+            <div>
+                <div class="footer-title">SUPPORT</div>
+                <div>Contact Us</div>
+                <div>FAQs</div>
+                <div>Size Guide</div>
+                <div>Shipping & Returns</div>
+            </div>
+            <div>
+               <div class="footer-title"> SHOP</div>
+               <div>Men's Shopping</div>
+               <div>Women's Shopping</div>
+               <div>Kids' Shopping</div>
+               <div>Discounts</div>
+            </div>
+            <div>
+                <div class="footer-title">COMPANY</div>
+                <div>Our Story</div>
+                <div>Careers</div>
+                <div>Terms & Conditions</div>
+                <div>Privacy & Cookie policy</div>
+            </div>
+            <div>
+               <div class="footer-title"> CONTACT</div>
+               <div>1-202-555-0105</div>
+               <div>1-202-555-0106</div>
+               <div>help@shopper.com</div>
+            </div>
+        </footer>
+
+
+
+
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+        <script>
+         document.querySelectorAll(".carousel").forEach((carousel) => {
+         const items = carousel.querySelectorAll(".carousel__item");
+         const buttonsHtml = Array.from(items, () => {
+         return `<span class="carousel__button"></span>`;
+        });
+
+        carousel.insertAdjacentHTML(
+        "beforeend",
+    `
+		<div class="carousel__nav">
+		 ${buttonsHtml.join("")}
+		</div>
+	`
+        );
+
+    const buttons = carousel.querySelectorAll(".carousel__button");
+     buttons.forEach((button, i) => {
+     button.addEventListener("click", () => {
+     // un-select all the items
+     items.forEach((item) =>
+     item.classList.remove("carousel__item--selected")
+     );
+     buttons.forEach((button) =>
+     button.classList.remove("carousel__button--selected")
+     );
+     items[i].classList.add("carousel__item--selected");
+     button.classList.add("carousel__button--selected");
+    });
+    });
+
+    // Select the first item on page load
+    items[0].classList.add("carousel__item--selected");
+    buttons[0].classList.add("carousel__button--selected");
+    });
+
+
+
+
+
+
+
+
+
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+    // Update the count down every 1 second
+     var x = setInterval(function() {
+    // Get today's date and time
+     var now = new Date().getTime();
+    // Find the distance between now and the count down date
+     var distance = countDownDate - now;
+    // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+    // Output the result in an element with id="demo"
+     document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+     + minutes + "m " + seconds + "s ";
+    // If the count down is over, write some text 
+     if (distance < 0) {
+     clearInterval(x);
+     document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+    }, 1000);
+
+
+
+        
+    </script>
+</body>
+</html>
